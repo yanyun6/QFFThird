@@ -10,7 +10,7 @@
 3）文件上传/分用户存放/文件分类：
 文件上传页面数据是由uploadservlet包（主要负责上传和文件分类）及upload类（主要负责数据库存储）进行，该类实现将文件上传到我的u盘中，并且在u盘中是先分上传者建立文件夹，再分文件类型文件夹，并且进行了文件夹是否存在的逻辑判断，若没有，则创建，有，则直接传到对应的文件夹，并且将上传者，上传文件类型，以及时间存储到数据库中<br>
 ![image](https://github.com/yanyun6/QFFThird/blob/master/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0.png)<br>
- ![image](https://github.com/yanyun6/QFFThird/blob/master/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%88%96%E4%B8%8B%E8%BD%BD.png）<br>
+  ![image](https://github.com/yanyun6/QFFThird/blob/master/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%88%96%E4%B8%8B%E8%BD%BD.png)<br>
 ![image](https://github.com/yanyun6/QFFThird/blob/master/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%BF%A1%E6%81%AF%E6%95%B0%E6%8D%AE%E8%A1%A8.png)<br>
 4）下载：
 该功能就是由DownLoadServlet类实现，只能唯一确定下载某个文件，如果需要下载别的文件，需要在该类中文件路径进行修改，不具有普适性<br>
