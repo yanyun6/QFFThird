@@ -3,10 +3,15 @@
 1) 
  云盘的注册，该页面输入的数据在register类（User类中提供register中使用的一些方法）内进行处理，实现的功能有，判断用户名、email、电话号码是否存在；验证码是否正确，若不正确，则在该页面显示相应的错误内容；若以上都正确，则插入数据库中的YunPanUser表内<br>
  ![image](https://github.com/yanyun6/QFFThird/blob/master/%E6%B3%A8%E5%86%8C.png)<br>
+![image](https://github.com/yanyun6/QFFThird/blob/master/%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E6%95%B0%E6%8D%AE%E8%A1%A8.png)<br>
 2）云盘登录：该页面首先判断验证码是否错误，接着判断用户名和密码是否存在，
 还可以判断该用户是否已经登录，若已经登录，则无法再次登录（没法进行页面跳转），输入的数据是在login类（user类提供一些方法）中进行处理<br>
+ ![image](https://github.com/yanyun6/QFFThird/blob/master/%E7%99%BB%E5%BD%95.png)<br>
 3）文件上传/分用户存放/文件分类：
 文件上传页面数据是由uploadservlet包（主要负责上传和文件分类）及upload类（主要负责数据库存储）进行，该类实现将文件上传到我的u盘中，并且在u盘中是先分上传者建立文件夹，再分文件类型文件夹，并且进行了文件夹是否存在的逻辑判断，若没有，则创建，有，则直接传到对应的文件夹，并且将上传者，上传文件类型，以及时间存储到数据库中<br>
+![image](https://github.com/yanyun6/QFFThird/blob/master/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0.png)<br>
+ ![image](https://github.com/yanyun6/QFFThird/blob/master/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%88%96%E4%B8%8B%E8%BD%BD.png）<br>
+![image](https://github.com/yanyun6/QFFThird/blob/master/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%BF%A1%E6%81%AF%E6%95%B0%E6%8D%AE%E8%A1%A8.png)<br>
 4）下载：
 该功能就是由DownLoadServlet类实现，只能唯一确定下载某个文件，如果需要下载别的文件，需要在该类中文件路径进行修改，不具有普适性<br>
 作业总结/不足：<br>
